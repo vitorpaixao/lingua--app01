@@ -55,7 +55,7 @@ lingua-bootstrap/
 
 - React 19, Vite 8, TypeScript ~6.
 - `vite.config.ts` must set `server.host = "0.0.0.0"`, `server.port = 3000`, and `server.watch.usePolling = true` (Docker volume HMR needs polling).
-- `App.tsx` — minimal welcome page: heading "Built with Lingua", a paragraph saying "Edit `src/App.tsx` and the page reloads.", and a counter button so HMR is visibly working.
+- `App.tsx` — minimal welcome page: heading "Built with Vitor's Lingua", a paragraph saying "Edit `src/App.tsx` and the page reloads.", and a counter button so HMR is visibly working.
 - `index.html` — `<title>Lingua App</title>`.
 - `.gitignore` — ignore `node_modules/`, `dist/`, `.DS_Store`, `*.log`. **Do NOT ignore `.opencode/`.**
 
