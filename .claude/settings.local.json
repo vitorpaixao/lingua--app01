@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\vitor\\\\Documents\\\\AI-projects\\\\lingua--bootstrap\" -Force -Recurse)",
+      "Bash(Select-Object -Property FullName, PSIsContainer)",
+      "Bash(Sort-Object FullName)",
+      "Bash(Format-Table -AutoSize)",
+      "PowerShell(Test-Path *)",
+      "PowerShell(Get-ChildItem -Path \"C:\\\\Users\\\\vitor\\\\Documents\\\\AI-projects\\\\lingua--bootstrap\" -Force -Depth 2 | Where-Object { $_.PSIsContainer } | ForEach-Object { $_.FullName } | Sort-Object)",
+      "PowerShell(Get-ChildItem -Path \"C:\\\\Users\\\\vitor\\\\Documents\\\\AI-projects\\\\lingua--bootstrap\" -Force -Depth 2 | Where-Object { -not $_.PSIsContainer } | ForEach-Object { $_.FullName } | Sort-Object)",
+      "PowerShell(Write-Host \"=== ROOT LEVEL CONTENTS ===\" -ForegroundColor Cyan; Get-ChildItem -Path \"C:\\\\Users\\\\vitor\\\\Documents\\\\AI-projects\\\\lingua--bootstrap\" -Force | ForEach-Object { if \\($_.PSIsContainer\\) { Write-Host \"  [DIR]  $\\($_.Name\\)\" } else { Write-Host \"  [FILE] $\\($_.Name\\)\" } })",
+      "Bash(npm install *)",
+      "Bash(npm show *)",
+      "Bash(node -e \"const d=require\\('fs'\\).readFileSync\\('/dev/stdin','utf8'\\); const v=JSON.parse\\(d\\); console.log\\(v.slice\\(-10\\).join\\('\\\\n'\\)\\)\")",
+      "Bash(git add *)",
+      "Bash(git commit *)"
+    ]
+  }
+}
