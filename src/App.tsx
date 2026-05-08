@@ -6,7 +6,7 @@ function App() {
 
   return (
     <div className="app">
-      <h1>Built with Lingua</h1>
+      <h1>Built with Vitor's Lingua</h1>
       <p>
         Edit <code>src/App.tsx</code> and the page reloads.
       </p>
