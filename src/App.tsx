@@ -6,7 +6,7 @@ function App() {
 
   return (
     <div className="app">
-      <h1>JJJ</h1>
+        <h1>Vitor PX</h1>
       <p>
         Edit <code>src/App.tsx</code> and the page reloads.
       </p>
